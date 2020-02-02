@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msv:DocumentRoot xmlns:msv="http://tns.tibco.com/bw/model/core/moduleSV">
+  <moduleSharedVariables>
+    <moduleSharedVariable name="LastEmailNotificationDate" type="{http://www.w3.org/2001/XMLSchema}string" initialValueMode="none"/>
+    <moduleSharedVariable name="PollingStatus" type="{http://www.w3.org/2001/XMLSchema}string" initialValueMode="none"/>
+    <moduleSharedVariable name="Pensioned_LastEmailNotification" type="{http://www.lbwl.com/bsmart/schemas/pensionedfileavailability/v201810}FileDetails" initialValueMode="none"/>
+  </moduleSharedVariables>
+  <import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.lbwl.com/bsmart/schemas/pensionedfileavailability/v201810" location="../Schemas/PensionedFileAvailabilty.xsd"/>
+</msv:DocumentRoot>

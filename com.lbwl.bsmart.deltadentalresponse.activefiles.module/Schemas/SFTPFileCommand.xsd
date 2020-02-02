@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://www.lbwl.com/bsmart/schemas/sftpfilecommands/v201810"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+	targetNamespace="http://www.lbwl.com/bsmart/schemas/sftpfilecommands/v201810">
+	<xsd:element name="SFTPFileCommands" type="tns:SFTPFileCommandsType">
+	</xsd:element>
+	<xsd:complexType name="SFTPFileCommandsType">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" maxOccurs="1"
+				name="SFTPFileCommand" type="tns:SFTPFileCommandType">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="SFTPFileCommandType">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" maxOccurs="1" name="Source" type="tns:SourceType">
+			</xsd:element>
+			<xsd:element minOccurs="0" maxOccurs="1" name="Target" type="tns:TargetType">
+			</xsd:element>
+			<xsd:element minOccurs="0" maxOccurs="1"
+				name="FileFilters" type="tns:FileFiltersType">
+			</xsd:element>
+			<xsd:element minOccurs="0" maxOccurs="1" name="Files" type="tns:FilesType">
+			</xsd:element>
+			<xsd:element minOccurs="0" maxOccurs="1" name="LocalDir" type="tns:LocalDirType">
+			</xsd:element>
+			<xsd:element minOccurs="0" maxOccurs="1"
+				name="PGPDetails" type="tns:PGPDetailsType">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="SourceType">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" maxOccurs="1" name="inputDir"
+				type="string">
+			</xsd:element>
+			<xsd:element minOccurs="0" maxOccurs="1" name="archiveDir"
+				type="string">
+			</xsd:element>
+			<xsd:element minOccurs="0" maxOccurs="1"
+				name="postDownloadAction" type="string">
+			</xsd:element>
+			<xsd:element minOccurs="0" maxOccurs="1"
+				name="isFileValidationRequired" type="boolean">
+			</xsd:element>
+			<xsd:element minOccurs="0" maxOccurs="1" name="timeout"
+				type="int">
+			</xsd:element>
+			<xsd:element minOccurs="0" maxOccurs="1" name="retryCount"
+				type="int">
+			</xsd:element>
+			<xsd:element minOccurs="0" maxOccurs="1"
+				name="retryInterval" type="int">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="TargetType">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" maxOccurs="1" name="outputDir"
+				type="string">
+			</xsd:element>
+			<xsd:element minOccurs="0" maxOccurs="1" name="archiveDir"
+				type="string">
+			</xsd:element>
+			<xsd:element minOccurs="0" maxOccurs="1"
+				name="abortOnFailure" type="boolean">
+			</xsd:element>
+			<xsd:element minOccurs="0" maxOccurs="1"
+				name="archivalAtTarget" type="boolean">
+			</xsd:element>
+			<xsd:element name="retryCount" type="int" minOccurs="0" maxOccurs="1"></xsd:element>
+			<xsd:element name="retryInterval" type="int" minOccurs="0" maxOccurs="1"></xsd:element>
+			<xsd:element name="timeout" type="int" minOccurs="0" maxOccurs="1"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="FileFiltersType">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" maxOccurs="unbounded"
+				name="FileFilter">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element minOccurs="0" maxOccurs="1"
+							name="filenamePrefix" type="string">
+						</xsd:element>
+						<xsd:element minOccurs="0" maxOccurs="1"
+							name="filenamePostfix" type="string">
+						</xsd:element>
+						<xsd:element minOccurs="0" maxOccurs="1"
+							name="filenameTimeStamp" type="string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="FilesType">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" maxOccurs="unbounded"
+				name="File">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element minOccurs="0" maxOccurs="1"
+							name="inputFilename" type="string">
+						</xsd:element>
+						<xsd:element minOccurs="0" maxOccurs="1"
+							name="inputFilenameWithRemoteDir" type="string">
+						</xsd:element>
+						<xsd:element minOccurs="0" maxOccurs="1"
+							name="inputFilenameWithRemoteArchiveDir" type="string">
+						</xsd:element>
+						<xsd:element minOccurs="0" maxOccurs="1"
+							name="inputFilenameWithWorkingDir" type="string">
+						</xsd:element>
+						<xsd:element minOccurs="0" maxOccurs="1"
+							name="inputFilenameWithErrorDir" type="string">
+						</xsd:element>
+						<xsd:element minOccurs="0" maxOccurs="1"
+							name="inputFilenameWithProcessedDir" type="string">
+						</xsd:element>
+						<xsd:element minOccurs="0" maxOccurs="1"
+							name="outputFilename" type="string">
+						</xsd:element>
+						<xsd:element minOccurs="0" maxOccurs="1"
+							name="outputFilenameWithRemoteDir" type="string">
+						</xsd:element>
+						<xsd:element minOccurs="0" maxOccurs="1"
+							name="outputFilenameWithRemoteArchiveDir" type="string">
+						</xsd:element>
+						<xsd:element minOccurs="0" maxOccurs="1"
+							name="outputFilenameWithWorkingDir" type="string">
+						</xsd:element>
+						<xsd:element minOccurs="0" maxOccurs="1"
+							name="outputFilenameWithProcessedDir" type="string">
+						</xsd:element>
+						<xsd:element minOccurs="0" maxOccurs="1"
+							name="outputFilenameWithErrorDir" type="string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+            <xsd:element name="ErrorFile" type="tns:ErrorFileType" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+        </xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="LocalDirType">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" maxOccurs="1" name="workingDir"
+				type="string">
+			</xsd:element>
+			<xsd:element minOccurs="0" maxOccurs="1" name="processedDir"
+				type="string">
+			</xsd:element>
+			<xsd:element minOccurs="0" maxOccurs="1" name="errorDir"
+				type="string">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="PGPDetailsType">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" maxOccurs="1" name="action"
+				type="string">
+			</xsd:element>
+			<xsd:element minOccurs="0" maxOccurs="1"
+				name="keyFileFullname" type="string">
+			</xsd:element>
+			<xsd:element minOccurs="0" maxOccurs="1" name="keyPassword"
+				type="string">
+			</xsd:element>
+			<xsd:element minOccurs="0" maxOccurs="1" name="algorithm"
+				type="string">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="ErrorFileType">
+		<xsd:sequence>
+			<xsd:element name="fileName" type="string" minOccurs="0"
+				maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="errorMsg" type="string" minOccurs="0" maxOccurs="1"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

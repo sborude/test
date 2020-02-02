@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:property="http://ns.tibco.com/bw/property" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_Q0WtEGAKEemjOd9uMB0okA" targetNamespace="http://tns.tibco.com/bw/composite/com.lbwl.bsmart.deltadentalresponse.pensionedfiles.module" name="com.lbwl.bsmart.deltadentalresponse.pensionedfiles.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_RFI7EGAKEemjOd9uMB0okA" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_RFSFAGAKEemjOd9uMB0okA" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_RFTTIGAKEemjOd9uMB0okA" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_RFVIUGAKEemjOd9uMB0okA" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_RFWWcGAKEemjOd9uMB0okA" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_RFXkkGAKEemjOd9uMB0okA" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_RFYLoGAKEemjOd9uMB0okA" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_RFZZwGAKEemjOd9uMB0okA" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_RFan4GAKEemjOd9uMB0okA" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_feQVsGAKEemjOd9uMB0okA" name="/Connections/SFTP/Target/Host" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_8NjywGAKEemjOd9uMB0okA" name="/Connections/SFTP/Target/Port" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_8PBLUGAKEemjOd9uMB0okA" name="/Connections/SFTP/Target/Username" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_8QOFMGAKEemjOd9uMB0okA" name="/Connections/SFTP/Target/Password" type="property:password" scaext:simpleValue="#!aGr26Eps0Hj9t4/Cp9To1Q==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_8Rjh8GAKEemjOd9uMB0okA" name="/Connections/SFTP/Target/Timeout_ms" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_8S0tQGAKEemjOd9uMB0okA" name="/Connections/SFTP/Target/RetryCount" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_8T4dMGAKEemjOd9uMB0okA" name="/Connections/SFTP/Target/SleepInterval_ms" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_mjSR0GZkEemwM6ST2rjz6w" name="/Connections/SFTP/Source_PensionedFiles/Host" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_pWpxUGZkEemwM6ST2rjz6w" name="/Connections/SFTP/Source_PensionedFiles/Port" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_pYPswGZkEemwM6ST2rjz6w" name="/Connections/SFTP/Source_PensionedFiles/Username" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_patx8GZkEemwM6ST2rjz6w" name="/Connections/SFTP/Source_PensionedFiles/Password" type="property:password" scaext:simpleValue="#!vPWiDCoORxuChy1B6QBm6w==" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_pcQDAGZkEemwM6ST2rjz6w" name="/Connections/SFTP/Source_PensionedFiles/Timeout_ms" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_pd7eAGZkEemwM6ST2rjz6w" name="/Connections/SFTP/Source_PensionedFiles/SleepInterval_ms" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_uXQkcGZkEemwM6ST2rjz6w" name="/Connections/SFTP/Source_PensionedFiles/RetryCount" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_okkkgGALEemjOd9uMB0okA" name="/FileConfig/PensionedFiles/Source/RemoteInputDir" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_LShxUGAMEemjOd9uMB0okA" name="/FileConfig/PensionedFiles/Source/FilenamePrefix_OmissionReport" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_LUA_EGAMEemjOd9uMB0okA" name="/FileConfig/PensionedFiles/Source/FilenamePostfix_OmissionReport" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_LVgz4GAMEemjOd9uMB0okA" name="/FileConfig/PensionedFiles/Source/File_timestamp_OmissionReport" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_uqwn8GWjEemCoehxxBfQxA" name="/FileConfig/PensionedFiles/Source/FilenamePrefix_DiscrepancyReport" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_uwCJgGWjEemCoehxxBfQxA" name="/FileConfig/PensionedFiles/Source/FilenamePostfix_DiscrepancyReport" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_u1WuYGWjEemCoehxxBfQxA" name="/FileConfig/PensionedFiles/Source/File_timestamp_DiscrepancyReport" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_u_UisGWjEemCoehxxBfQxA" name="/FileConfig/PensionedFiles/Source/FilenamePrefix_AutomaticReport" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_vDLH8GWjEemCoehxxBfQxA" name="/FileConfig/PensionedFiles/Source/FilenamePostfix_AutomaticReport" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_vHGlsGWjEemCoehxxBfQxA" name="/FileConfig/PensionedFiles/Source/File_timestamp_AutomaticReport" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_onZ2EGALEemjOd9uMB0okA" name="/FileConfig/PensionedFiles/Target/RemoteOutputDir" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_oqat0GALEemjOd9uMB0okA" name="/FileConfig/PensionedFiles/Local/WorkingDir" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_SCdNAGAMEemjOd9uMB0okA" name="/FileConfig/PensionedFiles/Local/ErrorDir" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_SGq-oGAMEemjOd9uMB0okA" name="/FileConfig/PensionedFiles/Local/ProcessedDir" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_ZBPkEGAMEemjOd9uMB0okA" name="/Schedule/PensionedFiles/PollingStartTime_hhmmss" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_j-oesGAMEemjOd9uMB0okA" name="/Schedule/PensionedFiles/PollingEndTime_hhmmss" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_kCzNAGAMEemjOd9uMB0okA" name="/Schedule/PensionedFiles/PollingInterval_min" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_DVzqwGWQEem5IfLk2I3D2w" name="/Schedule/PensionedFiles/TimerStartTime_datetime" type="XMLSchema:dateTime" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_SvKk8GWREemCoehxxBfQxA" name="/Schedule/PensionedFiles/PollingDate" type="XMLSchema:string" scaext:simpleValue="" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_uchSgGAPEemjOd9uMB0okA" name="/CIF/OrgID" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_vmkDwGAPEemjOd9uMB0okA" name="/CIF/ProjectID" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_voD4kGAPEemjOd9uMB0okA" name="/CIF/ProcessID" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_vpjGUGAPEemjOd9uMB0okA" name="/CIF/Source" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_vrJBwGAPEemjOd9uMB0okA" name="/CIF/Target" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_vso2kGAPEemjOd9uMB0okA" name="/CIF/InterfaceID" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_vt-6YGAPEemjOd9uMB0okA" name="/CIF/Region" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_vvU-MGAPEemjOd9uMB0okA" name="/CIF/InterfaceModule" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_vwgp8GAPEemjOd9uMB0okA" name="/CIF/InterfaceFriendlyName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_wDkI0GAPEemjOd9uMB0okA" name="/CIF/SearchCriteria_InputFileName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_wE5lkGAPEemjOd9uMB0okA" name="/CIF/SearchCriteria_OutputFileName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_aTZysGAQEemjOd9uMB0okA" name="/CIF/Status_Error" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_aYnp4GAQEemjOd9uMB0okA" name="/CIF/Status_Inprocess" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_aqVE8GAQEemjOd9uMB0okA" name="/CIF/Status_Success" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_tuKiQGAQEemjOd9uMB0okA" name="/CIF/Noun" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_SOd5oGAVEemjOd9uMB0okA" name="/CIF/Level" type="XMLSchema:string" scaext:simpleValue="" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_iH4pYGAVEemjOd9uMB0okA" name="/CIF/isCIFMessage" type="XMLSchema:boolean" scaext:simpleValue="false" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_iL18UGAVEemjOd9uMB0okA" name="/CIF/isCIFEnabled" type="XMLSchema:boolean" scaext:simpleValue="false" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_iQOtEGAVEemjOd9uMB0okA" name="/CIF/isEmailEnabled" type="XMLSchema:boolean" scaext:simpleValue="false" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_iUN1MGAVEemjOd9uMB0okA" name="/CIF/isPrintToServerLog" type="XMLSchema:boolean" scaext:simpleValue="false" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_ukMn0GAPEemjOd9uMB0okA" name="/PGP/KeyFileFullname" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_eimXAGAQEemjOd9uMB0okA" name="/PGP/Algorithm" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_O4q3wGJgEem5IfLk2I3D2w" name="/PGP/KeyPassword" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_uoHegGAPEemjOd9uMB0okA" name="/Notification/IsEmailNotificationEnabled" type="XMLSchema:boolean" scaext:simpleValue="false" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_komr8GAQEemjOd9uMB0okA" name="/Notification/EMailID_From" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_0LAisGA4EemjOd9uMB0okA" name="/Notification/EmailID_BWLHR" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_0MwPIGA4EemjOd9uMB0okA" name="/Notification/EmailID_DeltaDental" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_0OR5IGA4EemjOd9uMB0okA" name="/Notification/EmailID_ESBOPs" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_kqF5sGAQEemjOd9uMB0okA" name="/Notification/EmailID_BWLIT" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_o3w0AGAQEemjOd9uMB0okA" name="/Notification/Environment" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_eH2I4GWbEemCoehxxBfQxA" name="/Notification/PensionedOmission" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_eLhvAGWbEemCoehxxBfQxA" name="/Notification/PensionedDiscrepancy" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_ePUp4GWbEemCoehxxBfQxA" name="/Notification/PensionedAutomatic" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_8dBqgGWOEem5IfLk2I3D2w" name="ComponentTimer-DeltaDentalPensionedResponseFiles" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_8dCRkGWOEem5IfLk2I3D2w" processName="com.bsmart.lbwl.deltadentalresponse.module.Timer-DeltaDentalPensionedResponseFiles"/>
+  </sca:component>
+</sca:composite>

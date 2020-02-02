@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:sftpconnection="http://ns.tibco.com/bw/palette/sftpconnection" xmi:id="_CNEJAGJ6Eem5IfLk2I3D2w" name="com.bsmart.lbwl.deltadentalresponse.activefiles.module.Target_CIS_SFTPConnectionResource" type="sftpconnection:sftpconnection">
+  <jndi:configuration xsi:type="sftpconnection:SFTPConnection" xmi:id="_CNEJAWJ6Eem5IfLk2I3D2w">
+    <substitutionBindings xmi:id="_DRs10GJ6Eem5IfLk2I3D2w" template="host" propName="/Connections/SFTP/Target/Host"/>
+    <substitutionBindings xmi:id="_DfnWAGJ6Eem5IfLk2I3D2w" template="port" propName="/Connections/SFTP/Target/Port"/>
+    <substitutionBindings xmi:id="_DvAc4GJ6Eem5IfLk2I3D2w" template="userName" propName="/Connections/SFTP/Target/Username"/>
+    <substitutionBindings xmi:id="_D8bN0GJ6Eem5IfLk2I3D2w" template="password" propName="/Connections/SFTP/Target/Password"/>
+  </jndi:configuration>
+</jndi:namedResource>

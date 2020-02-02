@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.lbwl.com/bsmart/schemas/pensionedfileavailability/v201810" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.lbwl.com/bsmart/schemas/pensionedfileavailability/v201810">
+<element name="FileDetails" type="tns:FileDetailsType"></element>
+
+    <complexType name="FileDetailsType">
+    	<sequence>
+    		<element name="PensionedOmission" type="string" minOccurs="0"
+    			maxOccurs="1">
+    		</element>
+    		<element name="PensionedDiscrepancy" type="string" minOccurs="0" maxOccurs="1"></element>
+    		<element name="PensionedAutomatic" type="string" minOccurs="0" maxOccurs="1"></element>
+    	</sequence>
+    </complexType>
+</schema>

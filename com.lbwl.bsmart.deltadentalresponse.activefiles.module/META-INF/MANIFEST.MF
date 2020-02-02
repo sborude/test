@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Com Bsmart Lbwl Deltadentalresponse Module
+Bundle-SymbolicName: com.lbwl.bsmart.deltadentalresponse.activefiles.module
+Bundle-Version: 1.0.0
+Bundle-ClassPath: lib/bcpg-jdk15on-1.60.jar,lib/bcprov-jdk15on-1.60.jar,lib/pgp-utilities-1.4.0.jar,.
+Bundle-Vendor: TIBCO Software Inc.
+Require-Bundle: com.lbwl.bsmart.commonservices;bundle-version="1.0.0"
+Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",
+ com.tibco.bw.module; filter:="(&(name=com.lbwl.bsmart.commonservices)(version=1.0.0))",
+ com.tibco.bw.palette; filter:="(name=bw.generalactivities)",
+ com.tibco.bw.palette; filter:="(name=bw.file)",
+ com.tibco.bw.palette; filter:="(name=bw.sftp)",
+ com.tibco.bw.palette; filter:="(name=bw.java)",
+ com.tibco.bw.palette; filter:="(name=bw.xml)",
+ com.tibco.bw.sharedresource.model; filter:="(name=bw.sftp)"
+TIBCO-BW-Version: 6.5.0 HF4 V99 2018-11-21
+TIBCO-BW-Edition: bwe
+TIBCO-BW-ApplicationModule: META-INF/module.bwm
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+TIBCO-BW-ConfigProfile: META-INF/default.substvar
+TIBCO-BW-ModuleSharedVariables: META-INF/module.msv
+TIBCO-BW-JobSharedVariables: META-INF/module.jsv

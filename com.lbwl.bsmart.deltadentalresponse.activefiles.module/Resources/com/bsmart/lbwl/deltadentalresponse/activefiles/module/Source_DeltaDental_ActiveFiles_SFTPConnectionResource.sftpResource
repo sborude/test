@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:sftpconnection="http://ns.tibco.com/bw/palette/sftpconnection" xmi:id="_B7_MwGDdEemjOd9uMB0okA" name="com.bsmart.lbwl.deltadentalresponse.activefiles.module.Source_DeltaDental_ActiveFiles_SFTPConnectionResource" type="sftpconnection:sftpconnection">
+  <jndi:configuration xsi:type="sftpconnection:SFTPConnection" xmi:id="_B7_MwWDdEemjOd9uMB0okA">
+    <substitutionBindings xmi:id="_CwyGwGDdEemjOd9uMB0okA" template="host" propName="/Connections/SFTP/Source_ActiveFiles/Host"/>
+    <substitutionBindings xmi:id="_DM6pIGDdEemjOd9uMB0okA" template="port" propName="/Connections/SFTP/Source_ActiveFiles/Port"/>
+    <substitutionBindings xmi:id="_DbposGDdEemjOd9uMB0okA" template="userName" propName="/Connections/SFTP/Source_ActiveFiles/Username"/>
+    <substitutionBindings xmi:id="_DoM28GDdEemjOd9uMB0okA" template="password" propName="/Connections/SFTP/Source_ActiveFiles/Password"/>
+  </jndi:configuration>
+</jndi:namedResource>
